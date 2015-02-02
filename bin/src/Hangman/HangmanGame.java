@@ -1,6 +1,5 @@
 package Hangman;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class HangmanGame {
@@ -17,16 +16,10 @@ public class HangmanGame {
 			
 			while (m.isGameOver() == false && m.isWordGuessed() == false)  {
 			v.drowView(m.getNumberOffWrongAnswers(), m.getAvailableCharacters(), m.getMask());
-			try {
-				char[] l = input.nextLine().toCharArray();
-				char curentLetter = l[0];
-				m.setChoice(curentLetter);
-				//System.out.println(m.getMask());
-			} catch (InputMismatchException e) {
-				System.err.println("No character was entered");
-			} catch (IndexOutOfBoundsException iob) {
-				System.err.println("No character was entered");
-			}
+			char[] l = input.nextLine().toCharArray();
+			char curentLetter = l[0];
+			m.setChoice(curentLetter);
+			//System.out.println(m.getMask());
 			}
 			v.drowEnd(m.getNumberOffWrongAnswers(), wWord, m.isWordGuessed());
 			String choise = input.nextLine();
