@@ -18,7 +18,7 @@ public class Word {
 				wds.add(input.nextLine());
 			}
 		} catch (IOException ex) {
-			System.err.println("Missing countries.txt");
+			System.err.println("Missing capitals.txt");
 		}
 		int index = rnd.nextInt(wds.size() - 1);
 		word = wds.get(index);

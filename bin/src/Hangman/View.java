@@ -14,7 +14,7 @@ public class View {
 			System.out.println("The letter is used, try again!");
 			System.out.println("******************************");
 		}
-
+		System.out.println("You have to gues one Europian Capital\n");
 		System.out.print("Available letters are: ");
 		this.writeLetters(availableCharacters);
 		System.out.print("\nThe word to gess is:   ");
