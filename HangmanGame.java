@@ -30,6 +30,6 @@ public class HangmanGame {
 			}
 		} 
 		
-    	System.out.println("Thank you for beeng with Central Park Team's game The Hangman");		
+    	System.out.println("Thank you for beeng with Central Park Team's game The Hangman.");		
 	}
 }
